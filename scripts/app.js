@@ -2,5 +2,4 @@
 /*global angular */
 
 /* create angular module */
-var todoListApp = angular.module('todoListApp', []);
-
+angular.module('todoListApp', []);
