@@ -1,0 +1,17 @@
+[
+    {
+        "name": "finish angular course"
+    },
+    {
+        "name": "buy milk",
+        "completed": true
+    },
+    {
+        "name": "clean floor",
+        "completed": false
+    },
+    {
+        "name": "get some lunch",
+        "completed": false
+    }
+]

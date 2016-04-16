@@ -1,0 +1,6 @@
+{
+    "preset": "google",
+     "validateIndentation": 4,
+    "requireTrailingComma": false,
+    "validateLineBreaks": "CRLF"
+}

@@ -1,0 +1,30 @@
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: serif;
+}
+
+div, hr, p{
+    margin:1em 0 ;
+}
+
+
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task > .completed{
+    text-decoration: line-through;
+}
+
+.task.edited:after{
+    padding-left: 1em;
+    content: "(edited)";
+    color: #CCCCCC;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
