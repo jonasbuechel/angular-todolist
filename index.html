@@ -9,19 +9,11 @@
     <h1>My Todolist</h1>
     
     <div class="list" ng-controller="todoCtrl">
-        <h3>Testservice</h3>
-        <button ng-click="helloConsole()">Test my Service</button>
+        
         <h3>New Entry</h3>
         <input ng-model="newTask.name" type="text" class="editing-label" />
         <button ng-click="addNewTask(newTask)" class="save">save</button>
-        <h4>Your Input (live): {{newTask.name}}</h4>
-        
-        <div>
-            <h3>TodoList: raw data</h3>
-            <todo-list></todo-list>
-        </div>
-        
-        <div>
+
             <h3>TodoList: repeated html and functions per task</h3>
             <ul ng-repeat="task in todolist">
                 <li 
@@ -58,7 +50,6 @@
                     </button>
                 </li>
             </ul>
-        </div>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js" type="text/javascript"></script>

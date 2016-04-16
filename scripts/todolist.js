@@ -54,9 +54,6 @@ angularPlaygroundApp.directive('todoList', function() {
 
 /* Service to get Mockdata */
 angularPlaygroundApp.service('dataService', function($http) {
-    this.helloConsole = function() {
-        console.log('This is the hello console service!');
-    };
 
     this.getTodos = function(callback) {
         console.log('dataService: getTodos');
