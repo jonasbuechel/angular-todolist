@@ -2,5 +2,5 @@
 /*global angular */
 
 /* create angular module */
-var angularPlaygroundApp = angular.module('angularPlaygroundApp', []);
+var todoListApp = angular.module('todoListApp', []);
 

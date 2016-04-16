@@ -1,8 +1,8 @@
 /*jslint browser: true, devel: true, white: true, sloppy: true*/
-/*global angularPlaygroundApp */
+/*global todoListApp */
 
 /* add a controller */
-angularPlaygroundApp.controller('todoCtrl', function($scope, dataService) {
+todoListApp.controller('todoCtrl', function($scope, dataService) {
 
     //Add data from service
     dataService.getTodos(function(response) {
@@ -44,7 +44,7 @@ angularPlaygroundApp.controller('todoCtrl', function($scope, dataService) {
 });
 
 /* add directive */
-angularPlaygroundApp.directive('todoList', function() {
+todoListApp.directive('todoList', function() {
 
     return {
         template: 'saved values: {{todolist}}',
@@ -53,7 +53,7 @@ angularPlaygroundApp.directive('todoList', function() {
 });
 
 /* Service to get Mockdata */
-angularPlaygroundApp.service('dataService', function($http) {
+todoListApp.service('dataService', function($http) {
 
     this.getTodos = function(callback) {
         console.log('dataService: getTodos');
