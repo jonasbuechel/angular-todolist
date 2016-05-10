@@ -8,53 +8,12 @@
     
     <h1>My Todolist</h1>
     
-    <div class="list" ng-controller="todoCtrl">
-        
-        <h3>New Entry</h3>
-        <input ng-model="newTask.name" type="text" class="editing-label" />
-        <button ng-click="addNewTask(newTask)" class="save">save</button>
-
-            <h3>TodoList: repeated html and functions per task</h3>
-            <ul ng-repeat="task in todolist | orderBy: 'completed'">
-                <li 
-                    class="task"
-                    ng-class="{'edited': task.edited}"
-                >
-                    <input
-                           ng-model="task.completed"
-                           type="checkbox"
-                           ng-change="task.edited = true"
-                    />
-                    <label 
-                           ng-click="task.editing = true" 
-                           ng-hide="task.editing" 
-                           class="editing-label"
-                           ng-class="{'completed': task.completed}"
-                    >
-                        {{task.name}}
-                    </label>
-                    <input
-                            ng-model="task.name"
-                            ng-show="task.editing"
-                            ng-change="task.edited = true"
-                            ng-blur="task.editing = false"
-                            type="text" class="editing-label"
-                    />
-                    <button ng-click="task.editing = !task.editing" class="edit">edit <span ng-show="task.editing">finish</span></button>
-                    <button 
-                        ng-show="task.editing"
-                        ng-click="deleteTask(task, $index)"
-                        class="delete"
-                    >
-                        delete
-                    </button>
-                </li>
-            </ul>
-    </div>
+    <tasklist></tasklist>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
     <script src="scripts/controllers/main.js" type="text/javascript"></script>
     <script src="scripts/services/data.js" type="text/javascript"></script>
+    <script src="scripts/directives/tasklist.js" type="text/javascript"></script>
 </body>
 </html>
