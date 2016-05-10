@@ -1,6 +1,7 @@
 [
     {
-        "name": "finish angular course"
+        "name": "finish angular course",
+        "completed": false
     },
     {
         "name": "buy milk",

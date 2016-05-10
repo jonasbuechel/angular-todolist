@@ -15,7 +15,7 @@
         <button ng-click="addNewTask(newTask)" class="save">save</button>
 
             <h3>TodoList: repeated html and functions per task</h3>
-            <ul ng-repeat="task in todolist">
+            <ul ng-repeat="task in todolist | orderBy: 'completed'">
                 <li 
                     class="task"
                     ng-class="{'edited': task.edited}"
