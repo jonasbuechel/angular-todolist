@@ -9,6 +9,7 @@ var todoListApp = angular.module('todoListApp');
 todoListApp.directive('tasklist', function() {
     return {
         templateUrl: 'templates/tasklist.html',
-        controller: 'todoCtrl'
+        controller: 'todoCtrl',
+        replace: true
     };
 });
