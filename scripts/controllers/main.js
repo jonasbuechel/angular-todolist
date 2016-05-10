@@ -35,7 +35,7 @@ todoListApp.controller('todoCtrl', function($scope, dataService) {
 
         //update ui
         if ($scope.newTask.name) {
-            $scope.todolist.push(
+            $scope.todolist.unshift(
                 {
                     name: $scope.newTask.name || null,
                     completed: $scope.newTask.completed || false
