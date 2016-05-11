@@ -13,7 +13,7 @@
                 <input
                        ng-model="task.completed"
                        type="checkbox"
-                       ng-change="task.edited = true"
+                       ng-change="task.edited = true; updateTask(task)"
                 />
                 <label 
                        ng-click="task.editing = true" 
@@ -27,7 +27,7 @@
                         ng-model="task.name"
                         ng-show="task.editing"
                         ng-change="task.edited = true"
-                        ng-blur="task.editing = false"
+                        ng-blur="task.editing = false; updateTask(task)"
                         type="text" class="editing-label"
                 />
                 <button ng-click="task.editing = !task.editing" class="edit">edit <span ng-show="task.editing">finish</span></button>

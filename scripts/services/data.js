@@ -16,7 +16,11 @@ todoListApp.service('dataService', function($http) {
     };
 
     this.addNewTask = function(task) {
-        console.log('dataService: save todo: ' + task.name);
+        console.log('dataService: add new todo: ' + task.name);
+    };
+
+    this.updateTask = function(task) {
+        console.log('dataService: update todo: ' + task.name);
     };
 });
 

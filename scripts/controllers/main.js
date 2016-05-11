@@ -45,4 +45,10 @@ todoListApp.controller('todoCtrl', function($scope, dataService) {
         }
     };
 
+    //add service updateTask to controller
+    $scope.updateTask = function(task) {
+        //call service
+        dataService.updateTask(task);
+    };
+
 });
